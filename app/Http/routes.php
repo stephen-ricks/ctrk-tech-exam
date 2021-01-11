@@ -11,13 +11,6 @@
 |
 */
 
-
-use Illuminate\Http\Response as HttpResponse;
-
-$app->get('/', function () use ($app) {
-    return $app->version();
-});
-
 $app->group(['prefix' => 'employees'], function () use ($app) {
     $app->get('/',  "EmployeeController@getAll");
     $app->get('/{id}',  "EmployeeController@findById");
