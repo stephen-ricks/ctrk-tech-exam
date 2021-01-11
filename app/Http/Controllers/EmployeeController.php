@@ -11,14 +11,25 @@ use Illuminate\Support\Facades\Validator;
 class EmployeeController extends Controller
 {
     public $perPage = 10;
-
-    public function getAll()    
+    
+    /**
+     * Get all employees
+     *
+     * @return JSONResponse
+     */
+    public function getAll()   
     {
         $employees = Employee::paginate($this->perPage);
         
         return response()->json($employees->toArray());
     }
-
+    
+    /**
+     * Get an Employee by employee_id
+     *
+     * @param  mixed $id
+     * @return JSONResponse
+     */
     public function findById($id)
     {
         $employee = Employee::find($id);
@@ -29,7 +40,13 @@ class EmployeeController extends Controller
 
         return response()->json(['data' => $employee]);
     }
-
+    
+    /**
+     * Create an employee data
+     *
+     * @param  mixed $request
+     * @return JSONResponse
+     */
     public function create(Request $request)
     {
         $validation = Validator::make($request->all(), (new EmployeeValidator)->getRules());
@@ -44,7 +61,14 @@ class EmployeeController extends Controller
 
         return response()->json($employee, Response::HTTP_CREATED);
     }
-
+    
+    /**
+     * Update an employee data
+     *
+     * @param  mixed $request
+     * @param  mixed $id
+     * @return JSONResponse
+     */
     public function update(Request $request, $id)
     {
         $employee = Employee::find($id);
@@ -65,7 +89,13 @@ class EmployeeController extends Controller
 
         return response()->json(['data' => $employee], Response::HTTP_ACCEPTED);
     }
-
+    
+    /**
+     * Delete employee data
+     *
+     * @param  mixed $id
+     * @return JSONResponse
+     */
     public function delete($id)
     {
         $employee = Employee::find($id);
