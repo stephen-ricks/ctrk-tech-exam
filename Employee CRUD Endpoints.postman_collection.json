@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "4a9e7c64-6a04-4c1d-b399-abc3865aaa3c",
+		"name": "Employee CRUD Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Employee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "testss",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "testss",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"value": null,
+							"type": "file"
+						},
+						{
+							"key": "title",
+							"value": "tests",
+							"type": "text"
+						},
+						{
+							"key": "title_of_courtesy",
+							"value": "Mrs",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "1991-10-22",
+							"type": "text"
+						},
+						{
+							"key": "hire_date",
+							"value": "2020-12-13",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "as",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "as",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "as",
+							"type": "text"
+						},
+						{
+							"key": "postal_code",
+							"value": "213DD",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Philippines",
+							"type": "text"
+						},
+						{
+							"key": "home_phone",
+							"value": "1111",
+							"type": "text"
+						},
+						{
+							"key": "extension",
+							"value": "099s",
+							"type": "text"
+						},
+						{
+							"key": "notes",
+							"value": "tests",
+							"type": "text"
+						},
+						{
+							"key": "employee_id",
+							"value": "22",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee By Employee ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8001/employees/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"employees",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "test first name",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "test last name",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "tests position",
+							"type": "text"
+						},
+						{
+							"key": "title_of_courtesy",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "1991-10-22",
+							"type": "text"
+						},
+						{
+							"key": "hire_date",
+							"value": "2020-12-13",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "PH",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "PH",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "PH",
+							"type": "text"
+						},
+						{
+							"key": "postal_code",
+							"value": "213DD",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Philippines",
+							"type": "text"
+						},
+						{
+							"key": "home_phone",
+							"value": "1111",
+							"type": "text"
+						},
+						{
+							"key": "extension",
+							"value": "099",
+							"type": "text"
+						},
+						{
+							"key": "notes",
+							"value": "tests",
+							"type": "text"
+						},
+						{
+							"key": "employee_id",
+							"value": "22",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "testss",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "testss",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"value": null,
+							"type": "file"
+						},
+						{
+							"key": "title",
+							"value": "tests",
+							"type": "text"
+						},
+						{
+							"key": "title_of_courtesy",
+							"value": "Mrs",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "1991-10-22",
+							"type": "text"
+						},
+						{
+							"key": "hire_date",
+							"value": "2020-12-13",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "as",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "as",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "as",
+							"type": "text"
+						},
+						{
+							"key": "postal_code",
+							"value": "213DD",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Philippines",
+							"type": "text"
+						},
+						{
+							"key": "home_phone",
+							"value": "1111",
+							"type": "text"
+						},
+						{
+							"key": "extension",
+							"value": "099s",
+							"type": "text"
+						},
+						{
+							"key": "notes",
+							"value": "tests",
+							"type": "text"
+						},
+						{
+							"key": "employee_id",
+							"value": "22",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/employees/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"employees",
+						"22"
+					]
+				},
+				"description": "Originally, this was a 'patch' endpoint but PHP had a limitation on parsing form data on patch directive."
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8001/employees/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"employees",
+						"22"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
