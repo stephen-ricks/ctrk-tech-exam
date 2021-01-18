@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Get Employee",
+			"name": "Get Employees",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},

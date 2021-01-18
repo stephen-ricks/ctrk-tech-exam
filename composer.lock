@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30df60869c3bb128f009a53b777d212d",
+    "content-hash": "170bcb2ff384ff8c80bf32e58af989f9",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1388,10 +1388,6 @@
                 "laravel",
                 "lumen"
             ],
-            "support": {
-                "issues": "https://github.com/laravel/lumen-framework/issues",
-                "source": "https://github.com/laravel/lumen-framework"
-            },
             "time": "2016-12-17T01:58:38+00:00"
         },
         {
@@ -2497,7 +2493,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6.4",
+        "php": ">=7.0",
         "ext-pgsql": "*"
     },
     "platform-dev": [],
